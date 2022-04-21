@@ -22,7 +22,7 @@ resource "google_project_service" "run_api" {
 # Create the Cloud Run service
 resource "google_cloud_run_service" "run_service" {
   name = "app"
-  location = "us-east1"
+  location = "var.location"
 
   template {
     spec {
