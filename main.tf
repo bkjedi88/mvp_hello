@@ -10,7 +10,6 @@ terraform {
 
 provider "google" {
   # Replace `PROJECT_ID` with your project
-  #project = "457842895190"
   project = var.project
 }
 
